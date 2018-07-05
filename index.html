@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<title>My Secret Pics| Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form action="home.html" method='post'>
+	
+			<label for='username' >Username</label>
+            <input type="text" name="username" id='username' placeholder="Enter Username">
+            <label for='password'>Password</label>
+            <input type="password" name="password" id='password' placeholder="Enter Password">
+            <input type="submit" onclick="return check(this.form)" name="submit" value="Submit">
+           
+			
+			
+        </form>
+		<script language="javascript">
+function check(form)
+{
+
+if(form.username.value == "akchou0001" && form.password.value == "Abhi@123")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+	
+        
+    </div>
+
+</body>
+</head>
+</html>
